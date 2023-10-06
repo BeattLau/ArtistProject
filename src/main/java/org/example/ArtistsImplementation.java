@@ -11,12 +11,13 @@ public abstract class ArtistsImplementation implements Artists, Search{
     public void add(Artist artist) {
         artists[count++] = artist;
     }
-    public Artist get(int index) {
-        return artists[index];
-    }
+ //  public Artist get(int index) {
+   //     return artists[index];
+    //}
     @Override
     public List<Artist> search(String lastname) {
         List<Artist> results = new ArrayList<>();
+        int i;
 
     for (i=0; i<count; i++) {
         if (artists[i].getName().startsWith(lastname)){
